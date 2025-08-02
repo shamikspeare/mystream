@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import useLogin from "../hooks/useLoginUser";
 import { Link } from "react-router";
-import loginPageImg from "../images/loginPage.png";
+import loginPageImg from "../images/loginpage.png";
 
 const LoginPage = () => {
 
