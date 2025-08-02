@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .btn:hover {
+    background-color: inherit !important;
+    color: inherit !important;
+    border-color: inherit !important;
+    box-shadow: none !important;
+  }
+}
+body {
+  @apply font-noto;
+}
+.btn-ghost.btn-sm.text-primary:hover {
+  background-color: transparent !important;
+
+  color: var(--fallback-p, oklch(var(--p))) !important; /* keeps primary color */
+}
+
+.str-chat__channel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0);
+  height: 100%;
+}
+
+.str-chat__container {
+  max-width: 1200px;
+  width: 100%;
+  height: 80% !important;
+  margin: 0 auto !important;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  background-color: black;
+  overflow: hidden;
+}
+
+.str-chat__list {
+  background-color:black;
+  padding: 12px;
+}
+.str-chat__message-bubble{
+  background-color: #A2D5C6 !important;
+}
+.str-chat__list-notifications {
+  display: none;
+}
+
+.str-chat__message-input {
+  border-top:none;
+  background-color: black;
+}
+.str-chat__message--deleted-inner {
+  background-color: #A2D5C6;
+}
+.str-chat__channel-header {
+  background-color: black !important;
+  color: #A2D5C6 !important;
+}
+
+.str-chat__message-input .str-chat__textarea__textarea {
+  color: white !important; /* text color */
+}
+
+.str-chat__message-input .str-chat__textarea__textarea::placeholder {
+  color: #ccc !important; /* placeholder text */
+}
